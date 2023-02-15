@@ -38,7 +38,7 @@ fb.post('/', (req, res) => {
 fb.delete('/:note_id', (req, res) => {
   if(req.params.note_id){
     readAndDelete(req.params.note_id)
-    res.send(`Successfully deleted ${note.id}!`)
+    res.send(`Successfully deleted ${req.params.note_id}!`)
   } else {
     res.status(404).send('Note ID not found');
   }
