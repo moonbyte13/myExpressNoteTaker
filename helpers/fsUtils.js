@@ -32,7 +32,7 @@ const readAndAppend = (content, file) => {
 };
 
 const readAndDelete = (id) => {
-  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+  fs.readFile('./db/notes.json', 'utf8', (err, data) => {
     if(err){
       console.error(err);
     }else{
