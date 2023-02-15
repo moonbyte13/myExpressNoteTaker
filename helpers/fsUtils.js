@@ -45,7 +45,7 @@ const readAndDelete = (id) => {
           // console.log('before', parsedData);
           parsedData.splice(i, 1)
           // console.log('after', parsedData);
-          writeToFile('./db/db.json', parsedData)
+          writeToFile('./db/notes.json', parsedData)
         }
       }
     }

@@ -4,7 +4,7 @@ const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the notes
 fb.get('/', (req, res) =>
-  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
+  readFromFile('./db/notes.json').then((data) => res.json(JSON.parse(data)))
 );
 
 // POST Route for submitting a note
@@ -21,7 +21,7 @@ fb.post('/', (req, res) => {
       note_id: uuid(),
     };
 
-    readAndAppend(newNote, './db/db.json')
+    readAndAppend(newNote, './db/notes.json')
 
     const response = {
       status: 'success',

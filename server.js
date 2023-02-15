@@ -4,7 +4,7 @@ const { cLog } = require('./middleware/cLog.js');
 const { readFromFile } = require('./helpers/fsUtils');
 const api = require('./routes/index.js');
 
-const PORT = 3001;
+const PORT = process.env.port || 3001;
 
 const app = express();
 
@@ -36,7 +36,7 @@ app.get('/api/note/:note_id', (req, res) => {
   if(req.params.note_id){
     // console.info(`${req.method} request received to get a single a note`);
     const noteId = req.params.note_id
-    readFromFile('./db/db.json')
+    readFromFile('./db/notes.json')
       .then((data) => {
         const parsedData = JSON.parse(data)
         for(let i=0; i < parsedData.length; i++){
