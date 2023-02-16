@@ -8,12 +8,9 @@
 ## Description 📝
 
 ```md
--
--
--
--
--
--
+This was a fun project.
+I only had some issues with the DELETE request,
+that was only because I was not sending a response and it would not continue.
 
 ```
 
