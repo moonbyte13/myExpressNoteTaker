@@ -25,6 +25,7 @@ that was only because I was not sending a response and it would not continue.
 - [FAQ](#faq)
 
 <br>
+
 <a id="uS"></a>
 
 ## User Story 📘
@@ -35,6 +36,7 @@ I WANT to be able to write and save notes
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 <br>
+
 <a id="aC"></a>
 
 ## Acceptance Criteria ✅
